@@ -1,63 +1,95 @@
-# Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Humanoid-Gym：采用零样本 Sim2Real 迁移的人形机器人强化学习</font></font></h1><a id="user-content-humanoid-gym-reinforcement-learning-for-humanoid-robot-with-zero-shot-sim2real-transfer" class="anchor" aria-label="永久链接：Humanoid-Gym：采用零样本 Sim2Real 迁移的人形机器人强化学习" href="#humanoid-gym-reinforcement-learning-for-humanoid-robot-with-zero-shot-sim2real-transfer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><a href="https://sites.google.com/view/humanoid-gym/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[项目页面]</font></font></a></strong></p>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="/kscalelabs/humanoid-gym/blob/main/images/demo.gif" data-target="animated-image.originalLink"><img src="/kscalelabs/humanoid-gym/raw/main/images/demo.gif" alt="演示" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://github.com/kscalelabs/humanoid-gym/blob/main/images/demo.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="Demo" class="AnimatedImagePlayer-animatedImage" src="https://github.com/kscalelabs/humanoid-gym/raw/main/images/demo.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="458"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play Demo" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play Demo">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="Open Demo in new window" class="AnimatedImagePlayer-button" href="https://github.com/kscalelabs/humanoid-gym/blob/main/images/demo.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎来到我们的人形健身房！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Humanoid-Gym 是一个基于 Nvidia Isaac Gym 的易于使用的强化学习 (RL) 框架，旨在训练人形机器人的运动技能，强调从模拟到现实环境的零样本迁移。 Humanoid-Gym还集成了从Isaac Gym到Mujoco的sim-to-sim框架，允许用户在不同的物理模拟中验证训练好的策略，以确保策略的鲁棒性和泛化性。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该代码库由 RobotEra 的 XBot-S（1.2 米高的人形机器人）和 XBot-L（1.65 米高的人形机器人）在现实环境中进行了验证，具有零样本模拟到真实的传输。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2><a id="user-content-features" class="anchor" aria-label="永久链接：特点" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. 仿人机器人训练</font></font></h3><a id="user-content-1-humanoid-robot-training" class="anchor" aria-label="永久链接： 1. 仿人机器人训练" href="#1-humanoid-robot-training"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库为人形机器人的训练提供全面的指导和脚本。 Humanoid-Gym 为人形机器人提供专门的奖励，简化了模拟到现实的转换难度。在此存储库中，我们使用 RobotEra 的 XBot-L 作为主要示例。只需进行最少的调整，它也可用于其他机器人。我们的资源涵盖设置、配置和执行。我们的目标是通过提供深入的训练和优化，让机器人为现实世界的运动做好充分准备。</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全面的培训指南</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：我们为培训过程的每个阶段提供全面的演练。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分步配置说明</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：我们的指导清晰简洁，确保设置过程高效。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于轻松部署的执行脚本</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：利用我们预先准备的脚本来简化培训工作流程。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2.Sim2Sim支持</font></font></h3><a id="user-content-2-sim2sim-support" class="anchor" aria-label="永久链接：2. Sim2Sim 支持" href="#2-sim2sim-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们还共享我们的 sim2sim 管道，它允许您将训练有素的策略转移到高度准确且精心设计的模拟环境中。获得机器人后，您就可以自信地在现实环境中部署强化学习训练的策略。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的模拟器设置（尤其是 Mujoco）经过精心调整，可以紧密模仿现实世界的场景。这种仔细的校准可确保模拟环境和现实环境中的性能紧密结合。这一改进使我们的模拟更加值得信赖，并增强了我们对其适用于现实场景的信心。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3.去噪世界模型学习（即将推出！）</font></font></h3><a id="user-content-3-denoising-world-model-learning-coming-soon" class="anchor" aria-label="永久链接：3.去噪世界模型学习（即将推出！）" href="#3-denoising-world-model-learning-coming-soon"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">去噪世界模型学习（DWL）提出了一种先进的模拟到真实的框架，集成了状态估计和系统识别。这种双重方法确保机器人的学习和适应在现实环境中既实用又有效。</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">增强的模拟到真实的适应性</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：优化机器人从模拟环境到真实环境的过渡的技术。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改进的状态估计功能</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用于精确可靠的状态分析的高级工具。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">灵巧的手部操作（即将推出！）</font></font></h3><a id="user-content-dexterous-hand-manipulation-coming-soon" class="anchor" aria-label="永久链接：灵巧的手部操作（即将推出！）" href="#dexterous-hand-manipulation-coming-soon"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor" aria-label="永久链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Python 3.8 生成新的 Python 虚拟环境</font></font><code>conda create -n myenv python=3.8</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了获得最佳性能，我们建议使用 NVIDIA 驱动程序版本 525 </font></font><code>sudo apt install nvidia-driver-525</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。支持的最低驱动程序版本为 515。如果您无法安装版本 525，请确保您的系统至少具有版本 515 以维持基本功能。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 PyTorch 1.13 和 Cuda-11.7：
+</font></font><ul dir="auto">
+<li><code>conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia</code></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 numpy-1.23 和</font></font><code>conda install numpy=1.23</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装艾萨克健身房：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://developer.nvidia.com/isaac-gym" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从https://developer.nvidia.com/isaac-gym</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载并安装 Isaac Gym Preview 4 </font><font style="vertical-align: inherit;">。</font></font></li>
+<li><code>cd isaacgym/python &amp;&amp; pip install -e .</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行一个示例</font></font><code>cd examples &amp;&amp; python 1080_balls_of_solitude.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请咨询</font></font><code>isaacgym/docs/index.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装人形健身房：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克隆这个存储库。</font></font></li>
+<li><code>cd humanoid_gym &amp;&amp; pip install -e .</code></li>
+</ul>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用指南</font></font></h2><a id="user-content-usage-guide" class="anchor" aria-label="永久链接：使用指南" href="#usage-guide"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例子</font></font></h4><a id="user-content-examples" class="anchor" aria-label="永久链接：示例" href="#examples"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> Launching PPO Policy Training for 'v1' Across 4096 Environments</span>
+<span class="pl-c"><span class="pl-c">#</span> This command initiates the PPO algorithm-based training for the humanoid task.</span>
+python scripts/train.py --task=humanoid_ppo --run_name v1 --headless --num_envs 4096
 
-**[[Project Page]](https://sites.google.com/view/humanoid-gym/)**
+<span class="pl-c"><span class="pl-c">#</span> Evaluating the Trained PPO Policy 'v1'</span>
+<span class="pl-c"><span class="pl-c">#</span> This command loads the 'v1' policy for performance assessment in its environment. </span>
+<span class="pl-c"><span class="pl-c">#</span> Additionally, it automatically exports a JIT model, suitable for deployment purposes.</span>
+python scripts/play.py --task=humanoid_ppo --run_name v1
 
-![Demo](./images/demo.gif)
+<span class="pl-c"><span class="pl-c">#</span> Implementing Simulation-to-Simulation Model Transformation</span>
+<span class="pl-c"><span class="pl-c">#</span> This command facilitates a sim-to-sim transformation using exported 'v1' policy.</span>
+python scripts/sim2sim.py --load_model /path/to/logs/XBot_ppo/exported/policies/policy_1.pt
 
-Welcome to our Humanoid-Gym! 
-
-Humanoid-Gym is an easy-to-use reinforcement learning (RL) framework based on Nvidia Isaac Gym, designed to train locomotion skills for humanoid robots, emphasizing zero-shot transfer from simulation to the real-world environment. Humanoid-Gym also integrates a sim-to-sim framework from Isaac Gym to Mujoco that allows users to verify the trained policies in different physical simulations to ensure the robustness and generalization of the policies.
-
-This codebase is verified by RobotEra's XBot-S (1.2 meter tall humanoid robot) and XBot-L (1.65 meter tall humanoid robot) in real-world environment with zero-shot sim-to-real transfer.
-
-## Features
-
-### 1. Humanoid Robot Training
-This repository offers comprehensive guidance and scripts for the training of humanoid robots. Humanoid-Gym features specialized rewards for humanoid robots, simplifying the difficulty of sim-to-real transfer. In this repository, we use RobotEra's XBot-L as a primary example. It can also be used for other robots with minimal adjustments. Our resources cover setup, configuration, and execution. Our goal is to fully prepare the robot for real-world locomotion by providing in-depth training and optimization.
-
-
-- **Comprehensive Training Guidelines**: We offer thorough walkthroughs for each stage of the training process.
-- **Step-by-Step Configuration Instructions**: Our guidance is clear and succinct, ensuring an efficient setup process.
-- **Execution Scripts for Easy Deployment**: Utilize our pre-prepared scripts to streamline the training workflow.
-
-### 2. Sim2Sim Support
-We also share our sim2sim pipeline, which allows you to transfer trained policies to highly accurate and carefully designed simulated environments. Once you acquire the robot, you can confidently deploy the RL-trained policies in real-world settings.
-
-Our simulator settings, particularly with Mujoco, are finely tuned to closely mimic real-world scenarios. This careful calibration ensures that the performances in both simulated and real-world environments are closely aligned. This improvement makes our simulations more trustworthy and enhances our confidence in their applicability to real-world scenarios.
-
-
-### 3. Denoising World Model Learning (Coming Soon!)
-Denoising World Model Learning(DWL) presents an advanced sim-to-real framework that integrates state estimation and system identification. This dual-method approach ensures the robot's learning and adaptation are both practical and effective in real-world contexts.
-
-- **Enhanced Sim-to-real Adaptability**: Techniques to optimize the robot's transition from simulated to real environments.
-- **Improved State Estimation Capabilities**: Advanced tools for precise and reliable state analysis.
-
-### Dexterous Hand Manipulation (Coming Soon!)
-
-## Installation
-
-1. Generate a new Python virtual environment with Python 3.8 using `conda create -n myenv python=3.8`.
-2. For the best performance, we recommend using NVIDIA driver version 525 `sudo apt install nvidia-driver-525`. The minimal driver version supported is 515. If you're unable to install version 525, ensure that your system has at least version 515 to maintain basic functionality.
-3. Install PyTorch 1.13 with Cuda-11.7:
-   - `conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia`
-4. Install numpy-1.23 with `conda install numpy=1.23`.
-5. Install Isaac Gym:
-   - Download and install Isaac Gym Preview 4 from https://developer.nvidia.com/isaac-gym.
-   - `cd isaacgym/python && pip install -e .`
-   - Run an example with `cd examples && python 1080_balls_of_solitude.py`.
-   - Consult `isaacgym/docs/index.html` for troubleshooting.
-6. Install humanoid-gym:
-   - Clone this repository.
-   - `cd humanoid_gym && pip install -e .`
-
-
-
-## Usage Guide
-
-#### Examples
-
-```bash
-# Launching PPO Policy Training for 'v1' Across 4096 Environments
+<span class="pl-c"><span class="pl-c">#</span> Run our trained policy</span>
+python scripts/sim2sim.py --load_model /path/to/logs/XBot_ppo/exported/policies/policy_example.pt
+</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# Launching PPO Policy Training for 'v1' Across 4096 Environments
 # This command initiates the PPO algorithm-based training for the humanoid task.
 python scripts/train.py --task=humanoid_ppo --run_name v1 --headless --num_envs 4096
 
@@ -72,84 +104,144 @@ python scripts/sim2sim.py --load_model /path/to/logs/XBot_ppo/exported/policies/
 
 # Run our trained policy
 python scripts/sim2sim.py --load_model /path/to/logs/XBot_ppo/exported/policies/policy_example.pt
+" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.默认任务</font></font></h4><a id="user-content-1-default-tasks" class="anchor" aria-label="永久链接：1.默认任务" href="#1-default-tasks"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">人形_ppo</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目的：基线、PPO策略、多帧低级控制</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">观察空间：可变</font></font><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="cea6dc3ee040b1a46e6422838bf42acf" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c37"></mjx-c></mjx-mn><mjx-mo space="3" class="mjx-n"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi space="3" class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(</font></font></mo><mn><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">47</font></font></mn><mo><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">×</font></font></mo><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">H</font></font></mi><mo stretchy="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></mo></math></mjx-assistive-mml></mjx-container></math-renderer><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尺寸，其中</font></font><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="cea6dc3ee040b1a46e6422838bf42acf" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="1"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">H</font></font></mi></math></mjx-assistive-mml></mjx-container></math-renderer><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是帧数</font></font></li>
+<li><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="cea6dc3ee040b1a46e6422838bf42acf" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="2"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo space="2" class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-mo space="2" class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[</font></font></mo><msub><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">氧</font></font></mi><mrow data-mjx-texclass="ORD"><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">t</font></font></mi><mo><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-</font></font></mo><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">H</font></font></mi></mrow></msub><mo><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></mo><mo><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></mo><mo><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></mo><msub><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">氧</font></font></mi><mi><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">t</font></font></mi></msub><mo stretchy="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">]</font></font></mo></math></mjx-assistive-mml></mjx-container></math-renderer></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特权信息：</font></font><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="cea6dc3ee040b1a46e6422838bf42acf" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="3"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">73</font></font></mn></math></mjx-assistive-mml></mjx-container></math-renderer><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方面</font></font></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">humanoid_dwl（即将推出）</font></font></strong></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. PPO 政策</font></font></h4><a id="user-content-2-ppo-policy" class="anchor" aria-label="永久链接：2.PPO 政策" href="#2-ppo-policy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">训练命令</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：要训练 PPO 策略，请执行：
+</font></font><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>python humanoid/scripts/train.py --task=humanoid_ppo --load_run log_file_path --name run_name
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python humanoid/scripts/train.py --task=humanoid_ppo --load_run log_file_path --name run_name" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行经过训练的策略</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：要部署经过训练的 PPO 策略，请使用：
+</font></font><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>python humanoid/scripts/play.py --task=humanoid_ppo --load_run log_file_path --name run_name
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python humanoid/scripts/play.py --task=humanoid_ppo --load_run log_file_path --name run_name" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，加载实验文件夹中上次运行的最新模型。但是，可以通过调整</font></font><code>load_run</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>checkpoint</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在训练配置中选择其他运行迭代/模型。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. 模拟到模拟</font></font></h4><a id="user-content-3-sim-to-sim" class="anchor" aria-label="永久链接：3. Sim-to-sim" href="#3-sim-to-sim"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 Mujoco 的 Sim2Sim 部署</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：使用 Mujoco 通过以下命令执行模拟到模拟 (sim2sim) 部署：
+</font></font><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>python scripts/sim2sim.py --load_model /path/to/export/model.pt
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python scripts/sim2sim.py --load_model /path/to/export/model.pt" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">四、参数</font></font></h4><a id="user-content-4-parameters" class="anchor" aria-label="固定链接：4. 参数" href="#4-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CPU 和 GPU 使用情况</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：要在 CPU 上运行模拟，请同时设置</font></font><code>--sim_device=cpu</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>--rl_device=cpu</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。对于 GPU 操作，请相应地指定</font></font><code>--sim_device=cuda:{0,1,2...}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>--rl_device={0,1,2...}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。请注意</font></font><code>CUDA_VISIBLE_DEVICES</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不适用，并且必须匹配</font></font><code>--sim_device</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>--rl_device</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无头操作</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：包括</font></font><code>--headless</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不渲染的操作。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">渲染控制</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：按“v”在训练期间切换渲染。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">策略位置</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：经过训练的策略保存在</font></font><code>humanoid/logs/&lt;experiment_name&gt;/&lt;date_time&gt;_&lt;run_name&gt;/model_&lt;iteration&gt;.pt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5. 命令行参数</font></font></h4><a id="user-content-5-command-line-arguments" class="anchor" aria-label="永久链接：5. 命令行参数" href="#5-command-line-arguments"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RL训练请参考</font></font><code>humanoid/utils/helpers.py#L161</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。 sim-to-sim流程请参考</font></font><code>humanoid/scripts/sim2sim.py#L169</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码结构</font></font></h2><a id="user-content-code-structure" class="anchor" aria-label="永久链接：代码结构" href="#code-structure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个环境都取决于</font></font><code>env</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件 ( </font></font><code>legged_robot.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 和</font></font><code>configuration</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件 ( </font></font><code>legged_robot_config.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)。后者包含两类：（</font></font><code>LeggedRobotCfg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包含所有环境参数）和</font></font><code>LeggedRobotCfgPPO</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（表示所有训练参数）。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><code>env</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和类</font><font style="vertical-align: inherit;">都</font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用继承。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中指定的非零奖励比例将</font></font><code>cfg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相应名称的函数贡献给总奖励。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任务必须注册到</font></font><code>task_registry.register(name, EnvClass, EnvConfig, TrainConfig)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.注册可以发生在</font></font><code>envs/__init__.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库之内或之外。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加新环境</font></font></h2><a id="user-content-add-a-new-environment" class="anchor" aria-label="永久链接：添加新环境" href="#add-a-new-environment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基础环境</font></font><code>legged_robot</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建了崎岖地形的运动任务。相应的配置没有指定机器人资产（URDF/MJCF），也没有奖励等级。</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果需要添加新环境，请在</font></font><code>envs/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中创建一个新文件夹，并将配置文件命名为</font></font><code>&lt;your_env&gt;_config.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.新配置应继承现有环境配置。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果提出新机器人：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将相应的资源插入</font></font><code>resources/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹中。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>cfg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件中，设置资产的路径，定义主体名称、default_joint_positions 和 PD 增益。指定所需的名称</font></font><code>train_cfg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和环境的名称（python 类）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 中</font></font><code>train_cfg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，设置</font></font><code>experiment_name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>run_name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果需要，请在</font></font><code>&lt;your_env&gt;.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.从现有环境继承，覆盖所需的功能和/或添加您的奖励功能。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 中注册您的环境</font></font><code>humanoid/envs/__init__.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据您的要求</font></font><code>cfg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font><font style="vertical-align: inherit;">或调整其他参数。</font></font><code>cfg_train</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要删除奖励，请将其比例设置为零。避免修改其他环境的参数！</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你想要一个新的机器人/环境来执行sim2sim，你可能需要修改</font></font><code>humanoid/scripts/sim2sim.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查机器人在 MJCF 和 URDF 之间的关节映射。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据您训练的策略更改机器人的初始关节位置。</font></font></li>
+</ul>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除</font></font></h2><a id="user-content-troubleshooting" class="anchor" aria-label="永久链接：故障排除" href="#troubleshooting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">观察以下情况：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> error</span>
+ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory
 
-```
+<span class="pl-c"><span class="pl-c">#</span> solution</span>
+<span class="pl-c"><span class="pl-c">#</span> set the correct path</span>
+<span class="pl-k">export</span> LD_LIBRARY_PATH=<span class="pl-s"><span class="pl-pds">"</span>~/miniconda3/envs/your_env/lib:<span class="pl-smi">$LD_LIBRARY_PATH</span><span class="pl-pds">"</span></span> 
 
-#### 1. Default Tasks
+<span class="pl-c"><span class="pl-c">#</span> OR</span>
+sudo apt install libpython3.8
 
+<span class="pl-c"><span class="pl-c">#</span> error</span>
+AttributeError: module <span class="pl-s"><span class="pl-pds">'</span>distutils<span class="pl-pds">'</span></span> has no attribute <span class="pl-s"><span class="pl-pds">'</span>version<span class="pl-pds">'</span></span>
 
-- **humanoid_ppo**
-   - Purpose: Baseline, PPO policy, Multi-frame low-level control
-   - Observation Space: Variable $(47 \times H)$ dimensions, where $H$ is the number of frames
-   - $[O_{t-H} ... O_t]$
-   - Privileged Information: $73$ dimensions
+<span class="pl-c"><span class="pl-c">#</span> solution</span>
+<span class="pl-c"><span class="pl-c">#</span> install pytorch 1.12.0</span>
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
-- **humanoid_dwl (coming soon)**
+<span class="pl-c"><span class="pl-c">#</span> error, results from libstdc++ version distributed with conda differing from the one used on your system to build Isaac Gym</span>
+ImportError: /home/roboterax/anaconda3/bin/../lib/libstdc++.so.6: version <span class="pl-s"><span class="pl-pds">`</span>GLIBCXX_3.4.20<span class="pl-pds">`</span></span> not found (required by /home/roboterax/carbgym/python/isaacgym/_bindings/linux64/gym_36.so)
 
-#### 2. PPO Policy
-- **Training Command**: For training the PPO policy, execute:
-  ```
-  python humanoid/scripts/train.py --task=humanoid_ppo --load_run log_file_path --name run_name
-  ```
-- **Running a Trained Policy**: To deploy a trained PPO policy, use:
-  ```
-  python humanoid/scripts/play.py --task=humanoid_ppo --load_run log_file_path --name run_name
-  ```
-- By default, the latest model of the last run from the experiment folder is loaded. However, other run iterations/models can be selected by adjusting `load_run` and `checkpoint` in the training config.
-
-#### 3. Sim-to-sim
-
-- **Mujoco-based Sim2Sim Deployment**: Utilize Mujoco for executing simulation-to-simulation (sim2sim) deployments with the command below:
-  ```
-  python scripts/sim2sim.py --load_model /path/to/export/model.pt
-  ```
-
-
-#### 4. Parameters
-- **CPU and GPU Usage**: To run simulations on the CPU, set both `--sim_device=cpu` and `--rl_device=cpu`. For GPU operations, specify `--sim_device=cuda:{0,1,2...}` and `--rl_device={0,1,2...}` accordingly. Please note that `CUDA_VISIBLE_DEVICES` is not applicable, and it's essential to match the `--sim_device` and `--rl_device` settings.
-- **Headless Operation**: Include `--headless` for operations without rendering.
-- **Rendering Control**: Press 'v' to toggle rendering during training.
-- **Policy Location**: Trained policies are saved in `humanoid/logs/<experiment_name>/<date_time>_<run_name>/model_<iteration>.pt`.
-
-#### 5. Command-Line Arguments
-For RL training, please refer to `humanoid/utils/helpers.py#L161`.
-For the sim-to-sim process, please refer to `humanoid/scripts/sim2sim.py#L169`.
-
-## Code Structure
-
-1. Every environment hinges on an `env` file (`legged_robot.py`) and a `configuration` file (`legged_robot_config.py`). The latter houses two classes: `LeggedRobotCfg` (encompassing all environmental parameters) and `LeggedRobotCfgPPO` (denoting all training parameters).
-2. Both `env` and `config` classes use inheritance.
-3. Non-zero reward scales specified in `cfg` contribute a function of the corresponding name to the sum-total reward.
-4. Tasks must be registered with `task_registry.register(name, EnvClass, EnvConfig, TrainConfig)`. Registration may occur within `envs/__init__.py`, or outside of this repository.
-
-
-## Add a new environment 
-
-The base environment `legged_robot` constructs a rough terrain locomotion task. The corresponding configuration does not specify a robot asset (URDF/ MJCF) and no reward scales.
-
-1. If you need to add a new environment, create a new folder in the `envs/` directory with a configuration file named `<your_env>_config.py`. The new configuration should inherit from existing environment configurations.
-2. If proposing a new robot:
-    - Insert the corresponding assets in the `resources/` folder.
-    - In the `cfg` file, set the path to the asset, define body names, default_joint_positions, and PD gains. Specify the desired `train_cfg` and the environment's name (python class).
-    - In the `train_cfg`, set the `experiment_name` and `run_name`.
-3. If needed, create your environment in `<your_env>.py`. Inherit from existing environments, override desired functions and/or add your reward functions.
-4. Register your environment in `humanoid/envs/__init__.py`.
-5. Modify or tune other parameters in your `cfg` or `cfg_train` as per requirements. To remove the reward, set its scale to zero. Avoid modifying the parameters of other environments!
-6. If you want a new robot/environment to perform sim2sim, you may need to modify `humanoid/scripts/sim2sim.py`: 
-    - Check the joint mapping of the robot between MJCF and URDF.
-    - Change the initial joint position of the robot according to your trained policy.
-
-## Troubleshooting
-
-Observe the following cases:
-
-```bash
-# error
+<span class="pl-c"><span class="pl-c">#</span> solution</span>
+mkdir <span class="pl-smi">${YOUR_CONDA_ENV}</span>/lib/_unused
+mv <span class="pl-smi">${YOUR_CONDA_ENV}</span>/lib/libstdc++<span class="pl-k">*</span> <span class="pl-smi">${YOUR_CONDA_ENV}</span>/lib/_unused</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# error
 ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory
 
 # solution
 # set the correct path
-export LD_LIBRARY_PATH="~/miniconda3/envs/your_env/lib:$LD_LIBRARY_PATH" 
+export LD_LIBRARY_PATH=&quot;~/miniconda3/envs/your_env/lib:$LD_LIBRARY_PATH&quot; 
 
 # OR
 sudo apt install libpython3.8
@@ -166,25 +258,40 @@ ImportError: /home/roboterax/anaconda3/bin/../lib/libstdc++.so.6: version `GLIBC
 
 # solution
 mkdir ${YOUR_CONDA_ENV}/lib/_unused
-mv ${YOUR_CONDA_ENV}/lib/libstdc++* ${YOUR_CONDA_ENV}/lib/_unused
-```
-
-## Citation
-
-Please cite the following if you use this code or parts of it:
-```
-@software{RobotEra2024Humanoid-Gym,
+mv ${YOUR_CONDA_ENV}/lib/libstdc++* ${YOUR_CONDA_ENV}/lib/_unused" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引文</font></font></h2><a id="user-content-citation" class="anchor" aria-label="永久链接：引文" href="#citation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您使用此代码或其部分内容，请引用以下内容：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>@software{RobotEra2024Humanoid-Gym,
   author = {RobotEra},
   title = {{Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer}},
   url = {https://github.com/roboterax/humanoid-gym},
   year = {2024}
 }
-```
-
-## Acknowledgment
-
-The implementation of Humanoid-Gym relies on resources from [legged_gym](https://github.com/leggedrobotics/legged_gym) and [rsl_rl](https://github.com/leggedrobotics/rsl_rl) projects, created by the Robotic Systems Lab. We specifically utilize the `LeggedRobot` implementation from their research to enhance our codebase.
-
-## Any Questions?
-
-If you have further questions, please feel free to contact [support@robotera.com](mailto:support@robotera.com).
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="@software{RobotEra2024Humanoid-Gym,
+  author = {RobotEra},
+  title = {{Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer}},
+  url = {https://github.com/roboterax/humanoid-gym},
+  year = {2024}
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">致谢</font></font></h2><a id="user-content-acknowledgment" class="anchor" aria-label="永久链接：致谢" href="#acknowledgment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Humanoid-Gym 的实施依赖于</font><font style="vertical-align: inherit;">机器人系统实验室创建的</font></font><a href="https://github.com/leggedrobotics/legged_gym"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">legged_gym</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/leggedrobotics/rsl_rl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rsl_rl</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目的资源。我们专门利用</font></font><code>LeggedRobot</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">他们研究的实现来增强我们的代码库。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何问题？</font></font></h2><a id="user-content-any-questions" class="anchor" aria-label="永久链接： 有任何问题吗？" href="#any-questions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您还有其他问题，请随时联系</font></font><a href="mailto:support@robotera.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">support@robotera.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</article></div>
